@@ -1,3 +1,9 @@
+<?php
+
+define("_RECIPES_IMG_PATH_", "uploads/recipes/");
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -13,7 +19,20 @@
   <title>Cuisinea - Senegalaise </title>
 </head>
 
+
+
 <body>
+
+<?php
+
+$recipes = [
+  ["title" => "Mousse au chocolat", "description" => "Some quick example text to build on the card title and make up the bulk of the card's content.", "image" => "1-chocolate-au-mousse.jpg"],
+  ["title" => "Gratin Dauphinois", "description" => "Some quick example text to build on the card title and make up the bulk of the card's content.", "image" => "2-gratin-dauphinois.jpg "],
+  ["title" => "Salade de chevre", "description" => "Some quick example text to build on the card title and make up the bulk of the card's content.", "image" => "3-salade.jpg "]
+];
+
+?>
+
   <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <a href="index.php" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
@@ -90,9 +109,10 @@
 <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°Les cartes°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°--->
 
 <div class="row">
+<?php foreach($recipes as $key => $recipe){?>
   <div class="col-md-4">
   <div class="card">
-  <img src="uploads/recipes/1-chocolate-au-mousse.jpg" class="card-img-top" alt="...">
+  <img src="uploads/recipes/1-chocolate-au-mousse.jpg" class="card-img-top" alt="Logo">
   <div class="card-body">
     <h<5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -100,39 +120,10 @@
   </div>
 </div>
   </div>
-
-  <div class="col-md-4">
-  <div class="card">
-  <img src="uploads/recipes/2-gratin-dauphinois.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h<5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
+<?php }?>
 </div>
-  </div>
-
-  <div class="col-md-4">
-  <div class="card">
-  <img src="uploads/recipes/3-salade.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h<5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-  </div>
-
-</div>
-
-
-
-
-
-
 
 <!--°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°Footer°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°--->
-
     </div>
     <div class="container">
       <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
@@ -263,3 +254,9 @@
 </body>
 
 </html>
+
+<?php
+
+// ------------------------------------------------Arret image sur 23 mn------------------------------
+
+?> 
