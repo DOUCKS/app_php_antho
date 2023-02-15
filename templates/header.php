@@ -31,12 +31,12 @@ require_once("lib/config.php");
       </a>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">
+        <li><a href="index.php" class="nav-link px-2 link-secondary">
             <font style="vertical-align: inherit;">
               <font style="vertical-align: inherit;">Acceuil</font>
             </font>
           </a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">
+        <li><a href="recettes.php" class="nav-link px-2 link-dark">
             <font style="vertical-align: inherit;">
               <font style="vertical-align: inherit;">Nos recettes</font>
             </font>

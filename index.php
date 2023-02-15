@@ -29,7 +29,7 @@ require_once("lib/recipe.php");
         la boîte à outils open source frontale la plus populaire au monde, comprenant des variables et des mixins Sass, un système de grille réactif, de nombreux composants prédéfinis et 
         de puissants plug-ins JavaScript.</font></font></p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Voir nos recettes</font></font></button>
+        <a href="recettes.php" class="btn btn-primary">Voir nos recettes</a>
 
       </div>
     </div>
@@ -50,7 +50,7 @@ include("templates/recipe_partial.php");
 
 require_once("templates/footer.php");
 
-// -----------------Live - 5------------------Arret sur image à 19 mn------------------>
+// -----------------Live - 5------------------Arret sur image à 21 mn------------------>
 
   ?>  
 
