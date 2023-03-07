@@ -29,7 +29,7 @@ require_once("lib/recipe.php");
         la boîte à outils open source frontale la plus populaire au monde, comprenant des variables et des mixins Sass, un système de grille réactif, de nombreux composants prédéfinis et 
         de puissants plug-ins JavaScript.</font></font></p>
       <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <a href="recettes.php" class="btn btn-primary">Voir nos recettes</a>
+        <a href="recettes.php<?= $key;?>" class="btn btn-primary">Voir nos recettes</a>
 
       </div>
     </div>
@@ -42,16 +42,18 @@ require_once("lib/recipe.php");
 
   <?php foreach($recipes as $key => $recipe){ 
 
-include("templates/recipe_partial.php");
+  include("../templates/recipe_partial.php");
+
    }?>
+
 </div>
 
   <?php
 
-require_once("templates/footer.php");
+require_once("../templates/footer.php");
 
-// -----------------Live - 5------------------Arret sur image à 21 mn------------------>
+// -----------------Live - 5------------------Arret sur image à 43 mn------------------>
 
-  ?>  
+?>  
 
 

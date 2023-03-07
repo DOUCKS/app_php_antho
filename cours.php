@@ -7,24 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+
     <h1>Cretaion site internet</h1>
-
-
-
 
 </body>
 </html>
 
-<?php
-
-// les boucles
-
-
-for($i = 1; $i <= 10; $i++) {
-
-    echo "$i<br>";
-    
-}
-
-
-?>
